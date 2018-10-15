@@ -1,0 +1,79 @@
+:global .p-u {
+  padding: var(--u);
+}
+:global .p-u-b {
+  padding-bottom: var(--u);
+}
+:global .p-u-t {
+  padding-top: var(--u);
+}
+:global .p-u-r {
+  padding-right: var(--u);
+}
+:global .p-u-l {
+  padding-left: var(--u);
+}
+
+:global .p-s {
+  padding: var(--s);
+}
+:global .p-s-b {
+  padding-bottom: var(--s);
+}
+:global .p-s-t {
+  padding-top: var(--s);
+}
+:global .p-s-r {
+  padding-right: var(--s);
+}
+:global .p-s-l {
+  padding-left: var(--s);
+}
+
+:global .p-m {
+  padding: var(--m);
+}
+:global .p-m-b {
+  padding-bottom: var(--m);
+}
+:global .p-m-t {
+  padding-top: var(--m);
+}
+:global .p-m-r {
+  padding-right: var(--m);
+}
+:global .p-m-l {
+  padding-left: var(--m);
+}
+
+:global .p-l {
+  padding: var(--l);
+}
+:global .p-l-b {
+  padding-bottom: var(--l);
+}
+:global .p-l-t {
+  padding-top: var(--l);
+}
+:global .p-l-r {
+  padding-right: var(--l);
+}
+:global .p-l-l {
+  padding-left: var(--l);
+}
+
+:global .p-xl {
+  padding: var(--xl);
+}
+:global .p-xl-b {
+  padding-bottom: var(--xl);
+}
+:global .p-xl-t {
+  padding-top: var(--xl);
+}
+:global .p-xl-r {
+  padding-right: var(--xl);
+}
+:global .p-xl-l {
+  padding-left: var(--xl);
+}

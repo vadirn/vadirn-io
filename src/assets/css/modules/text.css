@@ -1,0 +1,186 @@
+h1,
+h2,
+h3,
+h4 {
+  font-size: inherit;
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: inherit;
+}
+
+ul,
+p,
+ol,
+pre {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+:global .ff-system {
+  font-family: var(--ff-system);
+}
+
+:global .ff-heading {
+  font-family: var(--ff-heading);
+}
+
+:global .ff-mono {
+  font-family: var(--ff-mono);
+}
+
+:global .text-title {
+  font-family: var(--ff-heading);
+  font-size: var(--fs-xxl);
+  line-height: var(--xxl);
+}
+
+:global .text-heading {
+  font-family: var(--ff-heading);
+  font-size: var(--fs-xl);
+  line-height: var(--xl);
+}
+
+:global .text-body-2 {
+  font-size: var(--fs-l);
+  line-height: var(--l);
+}
+
+:global .text-body-1 {
+  font-size: var(--fs-m);
+  line-height: var(--m);
+}
+
+:global .text-caption {
+  font-size: var(--fs-s);
+  line-height: var(--s);
+}
+
+:global .text-caps {
+  font-size: var(--fs-s);
+  line-height: var(--m);
+  text-transform: uppercase;
+  letter-spacing: var(--px);
+}
+
+:global .lh-xl {
+  line-height: var(--xl);
+}
+
+:global .lh-l {
+  line-height: var(--l);
+}
+
+:global .lh-m {
+  line-height: var(--m);
+}
+
+:global .lh-s {
+  line-height: var(--s);
+}
+
+:global .list-dash {
+  margin-left: 3ch;
+}
+
+:global .list-dash li:before {
+  content: '\2014';
+  position: absolute;
+  margin-left: -3ch;
+}
+
+:global .text-light {
+  font-weight: 300;
+}
+:global .text-medium {
+  font-weight: 500;
+}
+:global .text-bold {
+  font-weight: 700;
+}
+:global .text-regular {
+  font-weight: normal;
+}
+:global .text-italic {
+  font-style: italic;
+}
+:global .text-normal {
+  font-style: normal;
+}
+
+:global .text-center {
+  text-align: center;
+}
+:global .text-justify {
+  text-align: justify;
+}
+:global .text-left {
+  text-align: left;
+}
+:global .text-right {
+  text-align: right;
+}
+
+:global .text-line-through {
+  text-decoration: line-through;
+}
+:global .text-overline {
+  text-decoration: overline;
+}
+:global .text-underline {
+  text-decoration: underline;
+}
+
+:global .text-capitalize {
+  text-transform: capitalize;
+}
+:global .text-lowercase {
+  text-transform: lowercase;
+}
+:global .text-uppercase {
+  text-transform: uppercase;
+}
+
+:global .text-pre {
+  white-space: pre;
+}
+:global .text-pre-line {
+  white-space: pre-line;
+}
+:global .text-pre-wrap {
+  white-space: pre-wrap;
+}
+:global .text-nowrap {
+  white-space: nowrap;
+}
+
+:global .text-truncate {
+  overflow: hidden;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+:global .text-valign-top {
+  vertical-align: top;
+}
+
+:global .text-valign-middle {
+  vertical-align: middle;
+}
+
+:global .text-valign-bottom {
+  vertical-align: bottom;
+}
+
+:global .text-reset {
+  letter-spacing: initial;
+  text-transform: initial;
+  font-weight: initial;
+}

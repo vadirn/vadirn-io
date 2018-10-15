@@ -1,0 +1,80 @@
+.icon {
+  width: var(--m);
+  height: var(--m);
+  vertical-align: top;
+  cursor: default;
+  user-select: none;
+}
+
+.icon-backdrop {
+  border-radius: 50%;
+  background-color: var(--color-neutral-1);
+  border: 1px solid var(--color-neutral-2);
+}
+
+.radio:checked + .label .icon-backdrop {
+  background-color: var(--color-accent-1);
+  border-color: var(--color-accent-1-dark);
+}
+
+/* HOVER */
+.container:global(.--hover) .icon-backdrop,
+.container:hover .icon-backdrop {
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  border-color: var(--color-neutral-3);
+  border-width: 2px;
+}
+
+/* FOCUS */
+.container:global(.--focus) .icon-backdrop,
+:global(.with-focus-ring) .radio:focus + .label .icon-backdrop {
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  border-color: var(--color-neutral-3);
+  border-width: 2px;
+}
+:global(.with-focus-ring) .radio:checked:focus + .label .icon-backdrop {
+  border-color: var(--color-accent-1-dark);
+}
+.container:global(.--focus) .backdrop,
+:global(.with-focus-ring) .container:focus-within .backdrop {
+  background-color: var(--color-neutral-2);
+}
+
+/* ACTIVE */
+.radio:not(:disabled):active + .label .icon-backdrop,
+.container:global(.--active) .radio:not(:disabled) + .label .icon-backdrop {
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  border-color: var(--color-neutral-3);
+  border-width: 2px;
+  background-color: var(--color-neutral-2);
+}
+.radio:checked:not(:disabled):active + .label .icon-backdrop,
+.container:global(.--active) .radio:checked:not(:disabled) + .label .icon-backdrop {
+  border-color: var(--color-accent-1-dark);
+  background-color: var(--color-accent-1-light);
+}
+
+/* DISABLED */
+.radio:disabled + .label {
+  opacity: 0.3;
+}
+.container:hover .radio:disabled + .label .icon-backdrop {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-color: var(--color-neutral-2);
+  border-width: 1px;
+}
+.container:hover .radio:checked:disabled + .label .icon-backdrop {
+  border-color: var(--color-accent-1-dark);
+}

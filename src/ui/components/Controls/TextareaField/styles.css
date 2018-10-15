@@ -1,0 +1,23 @@
+.textarea {
+  min-height: calc(var(--m) + 2 * var(--u));
+}
+
+.backdrop {
+  background-color: var(--color-neutral-0);
+  border: 1px solid currentColor;
+  border-radius: inherit;
+}
+
+:global(.--focus) textarea + .backdrop,
+textarea:focus + .backdrop {
+  border: 2px solid currentColor;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+}
+
+textarea:disabled,
+textarea:disabled + .backdrop {
+  opacity: 0.3;
+}

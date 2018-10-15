@@ -1,0 +1,21 @@
+:global .cursor-pointer {
+  cursor: pointer;
+}
+
+:global .cursor-auto {
+  cursor: auto;
+}
+
+:global .user-select-none {
+  user-select: none;
+}
+
+:global .bg-grid {
+  background-size: 8px 8px;
+  background-image: linear-gradient(to right, transparent 7px, color-mod(var(--color-accent-1-light) alpha(20%)) 7px),
+    linear-gradient(to bottom, transparent 7px, color-mod(var(--color-accent-1-light) alpha(20%)) 7px);
+}
+
+:global .bg-debug {
+  background-color: color-mod(var(--color-accent-1-light) alpha(20%));
+}

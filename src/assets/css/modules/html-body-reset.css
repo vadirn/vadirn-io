@@ -1,0 +1,11 @@
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  color: var(--color-neutral-5);
+  font-size: var(--fs-m);
+  font-family: var(--ff-system);
+  line-height: var(--m);
+}

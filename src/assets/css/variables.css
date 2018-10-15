@@ -1,0 +1,55 @@
+:root {
+  /* Font-families */
+  --ff-system: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+  --ff-heading: BlinkMacSystemFont, -apple-system, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',
+    'Helvetica Neue', sans-serif;
+  --ff-mono: Hack, Consolas, 'Lucida Console', monospace;
+
+  /* Size units and font sizes */
+  --px: calc(1 / 16 * 1rem); /* 1 */
+  --u: calc(8 / 16 * 1rem); /* 8 */
+
+  --s: calc(2 * var(--u)); /* 16 */
+  --fs-s: calc(var(--s) - var(--u) / 2);
+
+  --m: calc(3 * var(--u)); /* 24 */
+  --fs-m: calc(var(--m) - var(--u));
+
+  --l: calc(4 * var(--u)); /* 32 */
+  --fs-l: calc(var(--l) - var(--u));
+
+  --xl: calc(5 * var(--u)); /* 40 */
+  --fs-xl: calc(var(--xl) - var(--u));
+
+  --xxl: calc(6 * var(--u)); /* 48 */
+  --fs-xxl: calc(var(--xxl) - var(--u));
+
+  /* Colors */
+  /* Neutrals: https://www.colorbox.io/#steps=6#hue_start=359#hue_end=359#hue_curve=easeInOutQuad#sat_start=0#sat_end=0#sat_curve=easeInOutQuad#sat_rate=130#lum_start=100#lum_end=16#lum_curve=easeOutQuad */
+  --color-neutral-0: #ffffff;
+  --color-neutral-1: #f5f5f5;
+  --color-neutral-2: #dfdfdf;
+  --color-neutral-3: #b7b7b7;
+  --color-neutral-4: #787878;
+  --color-neutral-5: #292929;
+
+  /* Accent-1: https://www.colorbox.io/#steps=3#hue_start=4#hue_end=4#hue_curve=easeOutQuad#sat_start=50#sat_end=100#sat_curve=easeOutQuad#sat_rate=130#lum_start=100#lum_end=80#lum_curve=easeOutQuad */
+  --color-accent-1-light: #ff6459;
+  --color-accent-1: #f31000;
+  --color-accent-1-dark: #cc0e00;
+
+  /* Shadows */
+  --shadow-1: 0 2px 4px 1px rgba(0, 0, 0, 0.4);
+
+  /* Border radii */
+  --radius-pill: 9999em;
+}
+
+@custom-media --mobile-s (min-width: 320px);
+@custom-media --mobile-m (min-width: 375px);
+@custom-media --mobile-l (min-width: 425px);
+@custom-media --tablet (min-width: 768px);
+@custom-media --laptop (min-width: 1024px);
+@custom-media --laptop-l (min-width: 1440px);
+@custom-media --4k (min-width: 2560px);

@@ -1,0 +1,39 @@
+.container {
+  pointer-events: none;
+}
+
+.s {
+  width: var(--s);
+  height: var(--s);
+}
+
+.m {
+  width: var(--m);
+  height: var(--m);
+}
+
+.l {
+  width: var(--l);
+  height: var(--l);
+}
+
+.xl {
+  width: var(--xl);
+  height: var(--xl);
+}
+
+.xxl {
+  width: var(--xxl);
+  height: var(--xxl);
+}
+
+.letter_v,
+.letter_a,
+.letter_d,
+.letter_i,
+.letter_r,
+.letter_n {
+  width: auto;
+  height: 25vh;
+  max-height: calc(16vw - 2 * var(--s));
+}

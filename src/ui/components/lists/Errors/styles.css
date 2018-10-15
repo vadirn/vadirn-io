@@ -1,0 +1,3 @@
+.list li:before {
+  content: '\2014 ';
+}

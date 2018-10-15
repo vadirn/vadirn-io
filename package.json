@@ -1,0 +1,74 @@
+{
+  "name": "vadirn-io",
+  "version": "0.0.4",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "serve ./dist",
+    "watch": "yarn run clear:assets && node build --watch",
+    "html": "yarn run clear:pages && node build --server",
+    "build": "yarn run clear && node build --production && node build --server",
+    "clear": "rm -rf dist/** && mkdir dist/assets && mkdir dist/pages && mkdir dist/node",
+    "clear:assets": "rm -rf dist/assets/**",
+    "clear:pages": "rm -rf dist/pages/**",
+    "clear:node": "rm -rf dist/node/**",
+    "prettier": "prettier --config .prettierrc.json --write ./src/**/*.js ./external_modules/**/*.js",
+    "lint": "eslint . --ext .js --quiet",
+    "test": "jest",
+    "commit": "git-cz"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --config .prettierrc.json --write",
+      "git add"
+    ],
+    "*.js": [
+      "eslint --quiet",
+      "git add"
+    ]
+  },
+  "devDependencies": {
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "commitizen": "^3.0.2",
+    "eslint": "^5.7.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^1.1.2",
+    "jest": "^23.6.0",
+    "prettier": "^1.14.3"
+  },
+  "dependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.2.0",
+    "babel-loader": "^8.0.4",
+    "classnames": "^2.2.6",
+    "css-loader": "^1.0.0",
+    "cssnano": "^4.1.4",
+    "friendly-errors-webpack-plugin": "^1.7.0",
+    "lint-staged": "^7.3.0",
+    "lodash.get": "^4.4.2",
+    "minimist": "^1.2.0",
+    "normalize.css": "^8.0.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.1.1",
+    "postcss-smart-import": "^0.7.6",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "serve": "^10.0.2",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
+}

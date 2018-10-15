@@ -1,0 +1,110 @@
+.checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.icon-container {
+  cursor: default;
+  width: var(--xl);
+  height: var(--m);
+  background-color: var(--color-neutral-1);
+  border: 1px solid var(--color-neutral-2);
+  border-radius: var(--radius-pill);
+  user-select: none;
+}
+.icon {
+  top: -1px;
+  left: -1px;
+  width: var(--m);
+  height: var(--m);
+  transition: transform 100ms ease-in-out;
+}
+.checkbox:checked + .label .icon-container {
+  background-color: var(--color-accent-1);
+  border: 1px solid var(--color-accent-1-dark);
+}
+.checkbox:checked + .label .icon {
+  transform: translateX(calc(var(--xl) - var(--m)));
+}
+
+.icon-backdrop {
+  border-radius: 50%;
+  background-color: var(--color-neutral-0);
+  border: 1px solid var(--color-neutral-2);
+}
+.checkbox:checked + .label .icon-backdrop {
+  border-color: var(--color-accent-1-dark);
+}
+
+/* HOVER */
+.container:global(.--hover) .icon-backdrop,
+.container:hover .icon-backdrop {
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  border-color: var(--color-neutral-3);
+  border-width: 2px;
+}
+
+/* FOCUS */
+.container:global(.--focus) .icon-backdrop,
+:global(.with-focus-ring) .checkbox:focus + .label .icon-backdrop {
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  border-color: var(--color-neutral-3);
+  border-width: 2px;
+}
+:global(.with-focus-ring) .checkbox:checked:focus + .label .icon-backdrop {
+  border-color: var(--color-accent-1-dark);
+}
+.container:global(.--focus) .backdrop,
+:global(.with-focus-ring) .container:focus-within .backdrop {
+  background-color: var(--color-neutral-2);
+}
+
+/* ACTIVE */
+.checkbox:not(:disabled):active + .label .icon-container,
+.container:global(.--active) .checkbox:not(:disabled) + .label .icon-container {
+  background-color: var(--color-neutral-2);
+}
+.checkbox:checked:not(:disabled):active + .label .icon-container,
+.container:global(.--active) .checkbox:checked:not(:disabled) + .label .icon-container {
+  background-color: var(--color-accent-1-light);
+}
+
+.checkbox:not(:disabled):active + .label .icon-backdrop,
+.container:global(.--active) .checkbox:not(:disabled) + .label .icon-backdrop {
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  border-color: var(--color-neutral-3);
+  border-width: 2px;
+}
+.checkbox:checked:not(:disabled):active + .label .icon-backdrop,
+.container:global(.--active) .checkbox:checked:not(:disabled) + .label .icon-backdrop {
+  border-color: var(--color-accent-1-dark);
+}
+
+/* DISABLED */
+.checkbox:disabled + .label {
+  opacity: 0.3;
+}
+.container:hover .checkbox:disabled + .label .icon-backdrop {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-color: var(--color-neutral-2);
+  border-width: 1px;
+}
+.container:hover .checkbox:checked:disabled + .label .icon-backdrop {
+  border-color: var(--color-accent-1-dark);
+}

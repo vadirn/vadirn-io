@@ -1,0 +1,10 @@
+dist/
+
+# logs and pids
+*.log
+pids/
+
+# deps
+node_modules/
+
+.DS_Store

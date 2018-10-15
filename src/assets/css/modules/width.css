@@ -1,0 +1,27 @@
+:global .w-content {
+  width: fit-content;
+}
+
+:global .w-u {
+  width: var(--u);
+}
+
+:global .w-s {
+  width: var(--s);
+}
+
+:global .w-m {
+  width: var(--m);
+}
+
+:global .w-l {
+  width: var(--l);
+}
+
+:global .w-xl {
+  width: var(--xl);
+}
+
+:global .w-xxl {
+  width: var(--xxl);
+}

@@ -1,0 +1,118 @@
+{
+  "plugins": ["import", "jsx-a11y", "react", "prettier"],
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true,
+      "generators": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "settings": {
+    "import/ignore": ["node_modules"],
+    "import/extensions": [".js"],
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".json"]
+      }
+    }
+  },
+  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:jsx-a11y/recommended"],
+  "rules": {
+    "prettier/prettier": "error",
+    "no-console": "warn",
+    "one-var": ["error", "never"],
+    "one-var-declaration-per-line": ["error", "always"],
+    "operator-assignment": ["error", "always"],
+    "quotes": ["warn", "single"],
+    "eqeqeq": "error",
+    "no-labels": "error",
+    "no-loop-func": "error",
+    "no-multi-str": "warn",
+    "no-native-reassign": "warn",
+    "no-negated-in-lhs": "error",
+    "no-negated-condition": "error",
+    "no-new-func": "error",
+    "no-new-wrappers": "error",
+    "no-script-url": "error",
+    "no-self-compare": "error",
+    "no-sequences": "error",
+    "no-shadow-restricted-names": "error",
+    "no-restricted-syntax": "error",
+    "no-template-curly-in-string": "error",
+    "no-throw-literal": "error",
+    "no-undef": [
+      "error",
+      {
+        "typeof": true
+      }
+    ],
+    "no-unused-expressions": "error",
+    "no-unused-vars": [
+      "error",
+      {
+        "ignoreRestSiblings": true
+      }
+    ],
+    "no-use-before-define": [
+      "error",
+      {
+        "functions": false
+      }
+    ],
+    "no-useless-computed-key": "error",
+    "no-useless-concat": "error",
+    "no-useless-constructor": "error",
+    "no-useless-rename": "error",
+    "no-with": "error",
+    "radix": "error",
+    "rest-spread-spacing": "error",
+    "func-names": "warn",
+    "func-name-matching": "warn",
+    "new-cap": "error",
+    "no-lonely-if": "error",
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 2,
+        "maxEOF": 1
+      }
+    ],
+    "no-ternary": "error",
+    "no-plusplus": "error",
+    "no-tabs": "error",
+    "no-var": "error",
+    "react/jsx-no-bind": [
+      "error",
+      {
+        "allowArrowFunctions": true
+      }
+    ],
+    "react/jsx-no-target-blank": "error",
+    "react/prop-types": "error",
+    "react/jsx-pascal-case": "warn",
+    "react/prefer-stateless-function": [
+      "warn",
+      {
+        "ignorePureComponents": true
+      }
+    ],
+    "react/style-prop-object": "error",
+    "jsx-a11y/label-has-for": "off",
+    "jsx-a11y/label-has-associated-control": [
+      "warn",
+      {
+        "controlComponents": ["TextField"]
+      }
+    ]
+  }
+}
