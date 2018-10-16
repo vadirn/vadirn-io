@@ -28,7 +28,16 @@ function Home() {
         <Icon path={ICONS.CUSTOM.LETTER_N} size={'CUSTOM.LETTER_N'} />
       </div>
       <div className={s.text}>
-        <p className="text-bold">Hi! I&apos;m Vadim. I design and code user interfaces. Remote only.</p>
+        <p className="text-bold">
+          Hi! I&apos;m Vadim. I design and code user interfaces.{' '}
+          <Link
+            href="https://www.amazon.com/dp/0804137501/ref=cm_sw_r_tw_dp_U_x_JvGXBb8H8WTJ8"
+            target="_blank"
+            rel="noopener noreferer">
+            Remote
+          </Link>{' '}
+          only.
+        </p>
         <ul className="m-s-b">
           <li>
             <Link href="https://github.com/vadirn" target="_blank" rel="noopener noreferer">
